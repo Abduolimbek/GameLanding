@@ -183,7 +183,7 @@ a {
   margin-bottom: 363px;
 }
 
-.header__content-btn:hover {
+.btn:hover {
   transform: scale(0.8);
 }
 
@@ -379,6 +379,7 @@ td {
 
 .quotes__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .quotes__box {
@@ -386,6 +387,7 @@ td {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .quotes__box-text {
@@ -394,14 +396,30 @@ td {
   padding: 50px 0 35px;
 }
 
+.quotes__box-btn {
+  transition: 0.4s;
+}
+
+.quotes__box-btn:hover {
+  transform: scale(0.8);
+}
+
 .quotes__message {
-  width: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .quotes__message-box {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   padding: 15px;
+  width: 452px;
+  margin-bottom: 30px;
+}
+
+.quotes__message-box:nth-child(odd) {
+  align-self: flex-end;
 }
 
 .quotes__box-wrapper {
@@ -453,4 +471,100 @@ td {
   font-size: 14px;
   line-height: 19px;
   color: #5f6061;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  background: url(../images/newsletter-bg.png) no-repeat center / cover;
+  padding: 220px 0 152px;
+}
+
+.newsletter__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newsletter__content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter__title {
+  text-align: start;
+  font-size: 79px;
+}
+
+.form {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.newsletter__input {
+  width: 50%;
+  background: #1c1e1f;
+  border: unset;
+  outline: unset;
+  padding: 10px 20px;
+  color: #ffb548;
+}
+
+.newsletter__input::placeholder {
+  font-size: 14px;
+  color: #5f6061;
+}
+
+.newsletter__btn {
+  padding: 20px 60px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #080A0B;
+  padding: 20px 0 50px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer__socials a i {
+  color: #fff;
+}
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background: #838485;
+  margin: 30px 0 22px;
+}
+
+.footer__wrapper-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: #767778;
+}
+
+.footer__text:last-child {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
 }

@@ -1,9 +1,22 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
 @media (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .media__icons {
@@ -17,6 +30,22 @@
   .system__content {
     width: 65%;
   }
+
+  .quotes__box {
+    width: 40%;
+  }
+
+  .quotes__title {
+    text-align: start;
+  }
+
+  .quotes__message-box {
+    width: 100%;
+  }
+
+  .newsletter__btn {
+    padding: 10px 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -26,24 +55,6 @@
 
   .media__icons {
     display: none;
-  }
-
-  .navbar {
-    position: relative;
-    background: #000;
-    width: 80%;
-    padding: 20px 0;
-    top: -322px;
-    transition: 0.3s;
-  }
-
-  .navbar--active {
-    top: 170px;
-  }
-
-  .navbar__menu {
-    flex-direction: column;
-    align-items: center;
   }
 
   .header__wrapper {
@@ -98,6 +109,36 @@
   .system__content {
     width: 100%;
   }
+
+  .quotes__wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .quotes__box {
+    width: 100%;
+  }
+
+  .quotes__message {
+    width: 100%;
+  }
+
+  .newsletter__wrapper {
+    justify-content: center;
+  }
+
+  .newsletter__content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .newsletter__title {
+    text-align: center;
+  }
+
+  .newsletter__btn {
+    width: 50%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -119,7 +160,7 @@
     display: none;
   }
 
-  .header__content-btn {
+  .btn {
     padding: 10px;
     line-height: 16px;
   }
@@ -147,6 +188,40 @@
 
   .features__box-text {
     font-size: 16px;
+  }
+
+  .quotes__message-title {
+    font-size: 18px;
+  }
+
+  .quotes__message-title-plus,
+  .quotes__message-text {
+    font-size: 16px;
+  }
+
+  .newsletter {
+    padding: 50px 0 75px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .newsletter__btn,
+  .newsletter__input {
+    width: 100%;
+  }
+
+  .footer__wrapper-text {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__wrapper {
+    justify-content: center;
   }
 }
 
