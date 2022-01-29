@@ -1,4 +1,4 @@
 
-document.querySelector('.burger-btn').addEventListener('click', e => {
-  document.querySelector('.navbar').classList.toggle('navbar--active')
+document.querySelector('.burger__btn').addEventListener('click', e => {
+  document.querySelector('.navbar').classList.toggle('header__navbar--active')
 })

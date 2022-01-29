@@ -46,6 +46,38 @@
   .newsletter__btn {
     padding: 10px 30px;
   }
+
+  .header__wrapper {
+    position: relative;
+  }
+
+  .burger__btn {
+    display: block;
+    position: absolute;
+    right: 55px;
+  }
+
+  .header__navbar {
+    display: block;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: -482px;
+    transition: 0.4s;
+  }
+
+  .header__navbar--active {
+    top: 80px;
+  }
+
+  .navbar__menu {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -244,9 +276,6 @@
     line-height: 16px;
   }
 
-  .navbar__menu {
-    gap: 15px;
-  }
 
   .navbar--active {
     top: 130px;
