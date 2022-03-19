@@ -49,26 +49,31 @@
 
   .header__wrapper {
     position: relative;
+ 
   }
 
   .burger__btn {
     display: block;
     position: absolute;
     right: 55px;
+    z-index: 11;
   }
 
   .header__navbar {
     display: block;
     background: #000;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
-    top: -685px;
-    transition: 0.4s;
+    height: 100%;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translateX(-100%);
   }
 
   .header__navbar--active {
-    top: 80px;
+    transform: translateX(0);
   }
 
   .navbar__menu {

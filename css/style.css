@@ -13,6 +13,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -39,11 +43,13 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  z-index: 12;
 }
 
 .logo {
   width: 55px;
   height: 55px;
+  z-index: 12;
 }
 
 .logo__img {
@@ -53,38 +59,60 @@ a {
 }
 
 .burger__btn {
-  width: 30px;
-  padding: 10px 0;
+  width: 40px;
+  height: 30px;
   position: relative;
   display: none;
+
 }
 
-.burger__btn span {
-  width: 100%;
-  height: 3px;
-  background: #fff;
+.burger__btn .burger__btn-span:nth-child(1) {
   display: block;
-}
-
-.burger__btn::before {
-  content: "";
   position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #fff;
   top: 0;
-  right: 0;
-  background: #fff;
-  width: 70%;
-  height: 3px;
+  left: 0;
+  transition: 0.3s;
 }
 
-.burger__btn::after {
-  content: "";
+.burger__btn .burger__btn-span:nth-child(2) {
+  display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #fff;
   width: 100%;
-  height: 3px;
+  height: 4px;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: 0.3s;
 }
+
+.burger__btn .burger__btn-span:nth-child(3) {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #fff;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.burger__btn.active .burger__btn-span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.burger__btn.active .burger__btn-span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 4px);
+}
+
+.burger__btn.active .burger__btn-span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, 0px);
+}
+
+
 
 .navbar__menu {
   display: flex;
@@ -109,6 +137,7 @@ a {
   display: flex;
   align-items: center;
   gap: 23px;
+  z-index: 12;
 }
 
 .media__lang {
@@ -143,10 +172,15 @@ a {
   transition: 0.4s;
 }
 
-.media__lang:hover .media__dropdown {
+.media__lang.active .media__dropdown {
   opacity: 1;
   pointer-events: all;
 }
+
+/* .media__lang:hover .media__dropdown {
+  opacity: 1;
+  pointer-events: all;
+} */
 
 .media__lang i {
   color: #fff;
