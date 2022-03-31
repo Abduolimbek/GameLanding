@@ -63,7 +63,6 @@ a {
   height: 30px;
   position: relative;
   display: none;
-
 }
 
 .burger__btn .burger__btn-span:nth-child(1) {
@@ -112,8 +111,6 @@ a {
   transform: rotate(45deg) translate(-5px, 0px);
 }
 
-
-
 .navbar__menu {
   display: flex;
   gap: 35px;
@@ -144,9 +141,13 @@ a {
   display: flex;
   align-items: center;
   gap: 6px;
-  cursor: pointer;
   padding-left: 5px;
   position: relative;
+  user-select: none;
+}
+
+.media__lang i {
+  cursor: pointer;
 }
 
 .media__lang-text {
@@ -212,7 +213,7 @@ a {
   font-size: 80px;
   line-height: 80px;
   letter-spacing: 3px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -223,7 +224,7 @@ a {
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -317,6 +318,91 @@ a {
   bottom: 0;
   right: 0;
 }
+
+/* SLIDER */
+
+.slider {
+  padding: 180px 0 140px 0;
+  background: url(../images/slider-bg.jpg) no-repeat center center / cover;
+}
+
+.slider__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.slider__content {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider__subtitle, .slider__title {
+  text-align: start;
+  font-weight: 400;
+} 
+
+.slider__title::after {
+  content: "";
+  display: block;
+  width: 720px;
+  height: 3px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  width: 360px;
+  margin-top: 70px;
+  align-self: flex-end;
+}
+
+.slider__swiper-box {
+  width: 50%;
+  display: flex;
+}
+
+.slider__swiper {
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 502px;
+  height: 610px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
 
 /* FEATURES */
 

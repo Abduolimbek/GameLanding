@@ -22,3 +22,11 @@ langs.forEach(lang => {
     document.querySelector(".media__lang").classList.remove("active");
   });
 });
+
+///swiper
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
+//wow
+new WOW().init();

@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -24,13 +26,13 @@
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="#">
         </a>
-        <!-- burger btn -->
+        
         <div class="burger__btn">
           <span class="burger__btn-span"></span>
           <span class="burger__btn-span"></span>
           <span class="burger__btn-span"></span>
         </div>
-        <!-- burger btn -->
+
 
         <nav class="navbar header__navbar">
           <ul class="navbar__menu">
@@ -69,6 +71,37 @@
       </div>
     </div>
   </header>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__wrapper">
+        <div class="slider__content">
+          <p class="subtitle slider__subtitle">What is SOS?</p>
+          <h1 class="title slider__title">social battle royale game</h1>
+          <p class="slider__text">
+            Each round, you and 15 other contestants compete to
+            escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+            solo or form friendships with others to escape?<br><br>
+            Making the right decisions could be the
+            difference between life and death.
+          </p>
+        </div>
+        <div class="slider__swiper-box">
+          <div class="slider__swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/slider1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider4.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <section class="features">
     <div class="container">
@@ -152,7 +185,7 @@
           <button class="btn quotes__box-btn">Read more testimonials</button>
         </div>
         <div class="quotes__message">
-          <div class="quotes__message-box">
+          <div class="quotes__message-box animate__animated animate__fadeInTopRight wow">
             <div class="quotes__box-wrapper">
               <div>
                 <img src="images/avatar1.png" alt="" class="quotes__box-avatar">
@@ -166,7 +199,7 @@
             <p class="quotes__message-text">“One of my gaming highlights of the year.”</p>
             <p class="quotes__message-subtext">October 18, 2018</p>
           </div>
-          <div class="quotes__message-box">
+          <div class="quotes__message-box animate__animated animate__fadeInRight wow">
             <div class="quotes__box-wrapper">
               <div>
                 <img src="images/avatar1.png" alt="" class="quotes__box-avatar">
@@ -182,7 +215,7 @@
             </p>
             <p class="quotes__message-subtext">December 21, 2018</p>
           </div>
-          <div class="quotes__message-box">
+          <div class="quotes__message-box animate__animated animate__fadeInBottomRight wow">
             <div class="quotes__box-wrapper">
               <div>
                 <img src="images/avatar1.png" alt="" class="quotes__box-avatar">
@@ -267,7 +300,8 @@
     </div>
   </footer>
 
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
